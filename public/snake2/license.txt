@@ -1,0 +1,11 @@
+Model Information:
+* title:	Model 31A - Timber Rattlesnake
+* source:	https://sketchfab.com/3d-models/model-31a-timber-rattlesnake-86ea4c029d004fbcb2ccc9409f5579cc
+* author:	DigitalLife3D (https://sketchfab.com/DigitalLife3D)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Model 31A - Timber Rattlesnake" (https://sketchfab.com/3d-models/model-31a-timber-rattlesnake-86ea4c029d004fbcb2ccc9409f5579cc) by DigitalLife3D (https://sketchfab.com/DigitalLife3D) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
