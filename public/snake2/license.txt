@@ -1,11 +1,11 @@
 Model Information:
-* title:	Model 31A - Timber Rattlesnake
-* source:	https://sketchfab.com/3d-models/model-31a-timber-rattlesnake-86ea4c029d004fbcb2ccc9409f5579cc
-* author:	DigitalLife3D (https://sketchfab.com/DigitalLife3D)
+* title:	Stylized planet
+* source:	https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70
+* author:	cmzw (https://sketchfab.com/cmzw)
 
 Model License:
-* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
-* requirements:	Author must be credited. No commercial use.
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Model 31A - Timber Rattlesnake" (https://sketchfab.com/3d-models/model-31a-timber-rattlesnake-86ea4c029d004fbcb2ccc9409f5579cc) by DigitalLife3D (https://sketchfab.com/DigitalLife3D) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+This work is based on "Stylized planet" (https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70) by cmzw (https://sketchfab.com/cmzw) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
