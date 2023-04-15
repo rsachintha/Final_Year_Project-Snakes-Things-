@@ -1,17 +1,27 @@
-name: Node Continuous Integration
-
-on:
-  pull_request:
-    branches: [master]
-
+name: "Main"
+on: pull_request
 jobs:
-  test_pull_request:
+  lint-and-test:
+    name: Run linters and then tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 18
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
+          node-version-file: ".nvmrc"
+          cache: "npm"
+      - name: Install dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
+        env:
+          CI: true
+      - name: Run Cypress
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm run serve -- --port=5173
+          wait-on: http://127.0.0.1:5173/
+          browser: chrome
+          headless: true
