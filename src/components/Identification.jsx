@@ -13,6 +13,9 @@ const Identification = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [disable, setDisable] = useState(false);
 	const [file, setFile] = useState(null);
+	const [data, setData] = useState(null);
+	const [msg, setMsg] = useState(null);
+	const [danger, setIsDanger] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -30,6 +33,7 @@ const Identification = () => {
 			.post(url, data, config)
 			.then((response) => {
 				console.log(response.data);
+				setData(response.data);
 				setIsOpen(true);
 			})
 			.catch((err) => {
@@ -37,16 +41,28 @@ const Identification = () => {
 			});
 	};
 
+	const isValidFileUploaded = (file) => {
+		const validExtensions = ["png", "jpeg", "jpg"];
+		const fileExtension = file.type.split("/")[1];
+		return validExtensions.includes(fileExtension);
+	};
+
 	const handleChange = (e) => {
+		const file = e.target.files[0];
+		if (isValidFileUploaded(file)) {
+			setMsg("Valid file uploaded!");
+		} else {
+			setIsDanger(true);
+			setMsg("Invalid file uploaded!");
+		}
 		setFile(e.target.files[0]);
 		setDisable(true);
-		// console.log(file);
 	};
 
 	return (
 		<>
 			{isOpen ? (
-				<Modal setIsOpen={setIsOpen}></Modal>
+				<Modal setIsOpen={setIsOpen} data={data}></Modal>
 			) : (
 				<>
 					<div
@@ -83,18 +99,18 @@ const Identification = () => {
 										<input
 											name="imagefile"
 											className="hidden"
-											// className="shadow-md shadow-primary bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 											type="file"
 											onChange={handleChange}
 										/>
 									</label>
 								)}
-
+								{danger ? (
+									<label className="text-red-500">{msg}</label>
+								) : (
+									<label className="text-green-500">{msg}</label>
+								)}
 								{isLoading ? (
-									<button
-										// type="submit"
-										className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-									>
+									<button className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary">
 										Predicting...
 									</button>
 								) : (

@@ -3,7 +3,6 @@ import image from "../assets/modal.png";
 
 function Modal(props) {
 	return (
-		// <div className="w-screen h-screen bg-primary fixed flex justify-center items-center">
 		<div className="w-[500px] h-[500px] rounded-xl bg-secondary shadow-md flex flex-col p-6 ml-[330px]">
 			<div className="flex justify-end">
 				<button
@@ -24,10 +23,9 @@ function Modal(props) {
 				/>
 			</div>
 			<div className=" flex-[50%] flex justify-center items-center text-center text-2xl font-bold text-primary">
-				<p>Black Mamba</p>
+				<p>{props.data}</p>
 			</div>
 		</div>
-		// </div>
 	);
 }
 
