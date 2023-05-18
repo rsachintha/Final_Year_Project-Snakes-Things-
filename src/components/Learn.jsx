@@ -1,11 +1,18 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import {
+	VerticalTimeline,
+	VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
 import wiki from "../assets/wiki.png";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { facts } from "../constants";
+import { steps } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const KnowledgeCard = ({
@@ -24,7 +31,7 @@ const KnowledgeCard = ({
 					scale: 1,
 					speed: 450,
 				}}
-				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full sm:h-[730px] h-[650px]"
+				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full sm:h-[680px] h-[650px]"
 			>
 				<div className="relative w-full h-[230px]">
 					<img
@@ -60,7 +67,7 @@ const KnowledgeCard = ({
 					{danger.map((danger) => (
 						<p
 							key={`${name}-${danger.name}`}
-							className={`text-[14px] ${danger.color}`}
+							className={`text-[14px] ${danger.color} font-bold`}
 						>
 							{danger.name}
 						</p>
@@ -83,11 +90,11 @@ const Learn = () => {
 					variants={fadeIn("", "", 0.1, 1)}
 					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
-					Following projects showcases my skills and experience through
-					real-world examples of my work. Each project is briefly described with
-					links to code repositories and live demos in it. It reflects my
-					ability to solve complex problems, work with different technologies,
-					and manage projects effectively.
+					There are so many species of snakes around the world and they are so
+					hard to identify because of their unique similarities. And here you
+					can get an idea regarding world's most venomous top three snake
+					species and world's top three non-venomous snake species. So, danger
+					ahead!
 				</motion.p>
 			</div>
 

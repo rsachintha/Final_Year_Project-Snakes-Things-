@@ -17,7 +17,7 @@ const Identification = () => {
 	const [msg, setMsg] = useState(null);
 	const [danger, setIsDanger] = useState(false);
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setIsLoading(true);
 
@@ -29,7 +29,7 @@ const Identification = () => {
 			},
 		};
 		const url = "http://localhost:3000/predict";
-		axios
+		await axios
 			.post(url, data, config)
 			.then((response) => {
 				console.log(response.data);

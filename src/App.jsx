@@ -6,6 +6,7 @@ import Identification from "./components/Identification";
 import Learn from "./components/Learn";
 import Services from "./components/Services";
 import Treatments from "./components/Treatments";
+import Steps from "./components/Steps";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 				<Services />
 				<Treatments />
 				<Learn />
+				<Steps />
 				<div className="relative z-0">
 					<Identification />
 				</div>

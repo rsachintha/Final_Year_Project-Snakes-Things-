@@ -46,9 +46,9 @@ const Services = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 			>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam,
-				recusandae mollitia. Maiores ut laboriosam inventore repudiandae quasi
-				tenetur quis error, minus sint accusamus sunt reprehenderit!
+				This application's intention is to help society in identifying snake
+				species in order to keep them and both snake species away from danger!
+				Here are the services you can get from this application,
 			</motion.p>
 
 			<div className="mt-20 flex flex-wrap gap-10">
