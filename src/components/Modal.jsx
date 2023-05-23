@@ -3,7 +3,7 @@ import image from "../assets/modal.png";
 
 function Modal(props) {
 	return (
-		<div className="w-[500px] h-[500px] rounded-xl bg-secondary shadow-md flex flex-col p-6 ml-[330px]">
+		<div className="w-[500px] h-[500px] rounded-xl bg-secondary shadow-md flex flex-col p-6 ml-[330px] backdrop-blur-sm">
 			<div className="flex justify-end">
 				<button
 					className="bg-transparent border-none text-2xl cursor-pointer text-primary font-bold"
